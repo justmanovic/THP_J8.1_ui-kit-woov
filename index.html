@@ -9,6 +9,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <title>Document</title>
 </head>
 
@@ -158,27 +160,140 @@
     </div>
 
     <h3>L'iconographie</h3>
+    <div class="activity-grid map">
+      <i class="fas fa-wifi"></i>
+      <i class="fas fa-laptop"></i>
+    </div>
+
+    <div class="activity-grid dark">
+      <i class="fas fa-snowboarding"></i>
+      <i class="fas fa-skiing-nordic"></i>
+      <i class="fas fa-campground"></i>
+      <i class="fas fa-hiking"></i>
+      <i class="fas fa-skiing"></i>
+      <i class="fas fa-volleyball-ball"></i>
+      <i class="fas fa-running"></i>
+      <i class="fas fa-quidditch"></i>
+      <i class="fas fa-table-tennis"></i>
+      <i class="fas fa-football-ball"></i>
+      <i class="fas fa-futbol"></i>
+      <i class="fas fa-dumbbell"></i>
+    </div>
+    <div class="activity-grid medium">
+      <i class="fas fa-snowboarding"></i>
+      <i class="fas fa-skiing-nordic"></i>
+      <i class="fas fa-campground"></i>
+      <i class="fas fa-hiking"></i>
+      <i class="fas fa-skiing"></i>
+      <i class="fas fa-volleyball-ball"></i>
+      <i class="fas fa-running"></i>
+      <i class="fas fa-quidditch"></i>
+      <i class="fas fa-table-tennis"></i>
+      <i class="fas fa-football-ball"></i>
+      <i class="fas fa-futbol"></i>
+      <i class="fas fa-dumbbell"></i>
+    </div>
+
     <h3>Des inputs de formulaires</h3>
 
     <form class='form' accept-charset="UTF-8">
       <div>
         <label for='name_query'>This is a query</label>
-        <input name="name_query" type="text" />
+        <input name="name_query" type="text" , placeholder="Ton prénom" />
       </div>
       <div>
-        <label for="name_checkbox">This is a checkbox</label>
-        <input type="checkbox" name='name_checkbox' />
+        <label for="subscribeNews">This is a checkbox</label>
+        <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+      </div>
+      <div>
+        <label for="name_radio">This is a radio button</label>
+        <input type="radio" name='name_radio' />
+      </div>
+      <div>
+        <label for="name_radio">This is a radio button</label>
+        <input type="radio" name='name_radio' />
       </div>
       <div>
         <input class='btn btn-primary' type="submit" />
       </div>
+
+
     </form>
 
+    <p>This is a Select</p>
+    <select name="pets" id="pet-select">
+      <option value="">--Please choose an option--</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="hamster">Hamster</option>
+      <option value="parrot">Parrot</option>
+      <option value="spider">Spider</option>
+      <option value="goldfish">Goldfish</option>
+    </select>
+
+  </div>
+
+  <div class="card-section">
     <h3>Des cartes</h3>
+    <div class="wrapper-card">
+      <div class="card">
+        <div class="card-image primary"></div>
+        <div class="card-description">
+          Lorem ipsum dolor sit amet.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image primary-light"></div>
+        <div class="card-description">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, aperiam.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image secondary"></div>
+        <div class="card-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image secondary-light"></div>
+        <div class="card-description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
     <h3>Des listes</h3>
-    <h3>Les images</h3>
+
+    <ul class="list">
+      <li>
+        <h4>Titre li</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <small>Lorem ipsum dolor sit.</small>
+        <small class="top-right">4 days ago</small>
+      </li>
+      <li>
+        <h4>Titre li</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <small>Lorem ipsum dolor sit.</small>
+        <small class="top-right">4 days ago</small>
+      </li>
+      <li>
+        <h4>Titre li</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <small>Lorem ipsum dolor sit.</small>
+        <small class="top-right">4 days ago</small>
+      </li>
+      <li>
+        <h4>Titre li</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <small>Lorem ipsum dolor sit.</small>
+        <small class="top-right">4 days ago</small>
+      </li>
+    </ul>
   </div>
-  </div>
+
 
 </body>
 
