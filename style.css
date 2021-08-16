@@ -140,9 +140,6 @@ h1{
   text-align: center;
 }
 
-.card:hover{
-}
-
 .card-image{
   height: 80%;
 }
@@ -284,4 +281,9 @@ h1{
   100%{
     transform: rotate(-360deg);
   }
+}
+
+input[type=text]{
+  padding: 2px;
+  border: 1px red solid;
 }
