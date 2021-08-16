@@ -296,7 +296,6 @@ label{
   margin-right: 1rem;
   width: 15rem;
   margin:var(--m-xxs);
-
 }
 
 
@@ -459,4 +458,87 @@ select{
 
 .list li:active{
   opacity: 0.8;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup h3{
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.signup .signup-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px var(--color-primary-dark) solid;
+  border-radius: 10px;
+  width: 40rem;
+  padding: 3rem;
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.25);
+}
+
+.signup input[type=text] {
+  border: 1px var(--color-primary-dark) solid;
+  border-radius: 5px;
+  margin:var(--m-xs);
+  width: 35rem;
+  height: 2rem;
+  font-weight: lighter;
+}
+
+.signup input[type=date] {
+  border: 1px var(--color-primary-dark) solid;
+  background-color: inherit;
+  color: grey;
+  font: inherit;
+  border-radius: 5px;
+  margin:var(--m-xs);
+  padding: 3px;
+  width: 35rem;
+  height: 2rem;
+  font-weight: lighter;
+}
+
+.signup input[type=submit] {
+  width: 35rem;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin .signin-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px var(--color-primary-dark) solid;
+  border-radius: 10px;
+  width: 20rem;
+  padding: 3rem;
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.25);
+}
+
+.signin input[type=text] {
+  border: 2px var(--color-primary-dark) solid;
+  border-radius: 10px;
+  margin:var(--m-s);
+  width: 20rem;
+  height: 2rem;
+  font-weight: lighter;
+}
+
+.signin input[type=submit] {
+  width: 20rem;
+  font-size: 1rem;
 }

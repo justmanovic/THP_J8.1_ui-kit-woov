@@ -19,13 +19,13 @@
     <nav>
       <div class="logo">LOGO</div>
       <ul>
-        <li><a href="#">Les couleurs</a></li>
-        <li><a href="#">La typographie</a></li>
-        <li><a href="#">Les boutons</a></li>
-        <li><a href="#">L'iconographie</a></li>
-        <li><a href="#">Les inputs</a></li>
-        <li><a href="#">Les cards</a></li>
-        <li><a href="#">Les listes</a></li>
+        <li><a href="#couleurs">Les couleurs</a></li>
+        <li><a href="#typographie">La typographie</a></li>
+        <li><a href="#boutons">Les boutons</a></li>
+        <li><a href="#iconographie">L'iconographie</a></li>
+        <li><a href="#inputs">Les inputs</a></li>
+        <li><a href="#cards">Les cards</a></li>
+        <li><a href="#listes">Les listes</a></li>
       </ul>
     </nav>
   </header>
@@ -34,7 +34,7 @@
     <!-- <p>Un réseau social où les férus d'escalade pourraient
       noter les voies qu'ils grimpent, et sociabiliser grâce à ceci.</p> -->
 
-    <h3>Les couleurs</h3>
+    <h3 id='couleurs'>Les couleurs</h3>
     <h4>Couleurs du site</h4>
     <div class="wrapper-card">
       <div class="card">
@@ -124,7 +124,7 @@
 
   <div class="typo">
     <div>
-      <h3>La typographie</h3>
+      <h3 id='typographie'>La typographie</h3>
       <h1>Titre 1</h1>
       <h2>Titre 2</h2>
       <h3>Titre 3</h3>
@@ -142,7 +142,7 @@
   </div>
   <div class="wrapper">
 
-    <h3>Les boutons</h3>
+    <h3 id='boutons'>Les boutons</h3>
     <!-- <button>Bouton balise button</button> -->
     <div>
       <a href="#" class="btn btn-primary">primary</a>
@@ -159,7 +159,7 @@
       <a href="#" class="btn btn-light">light</a>
     </div>
 
-    <h3>L'iconographie</h3>
+    <h3 id='iconographie'>L'iconographie</h3>
     <div class="activity-grid map">
       <i class="fas fa-wifi"></i>
       <i class="fas fa-laptop"></i>
@@ -194,7 +194,7 @@
       <i class="fas fa-dumbbell"></i>
     </div>
 
-    <h3>Des inputs de formulaires</h3>
+    <h3 id='inputs'>Des inputs de formulaires</h3>
 
     <form class='form' accept-charset="UTF-8">
       <div>
@@ -216,8 +216,6 @@
       <div>
         <input class='btn btn-primary' type="submit" />
       </div>
-
-
     </form>
 
     <p>This is a Select</p>
@@ -234,7 +232,7 @@
   </div>
 
   <div class="card-section">
-    <h3>Des cartes</h3>
+    <h3 id='cards'>Des cartes</h3>
     <div class="wrapper-card">
       <div class="card">
         <div class="card-image primary"></div>
@@ -264,7 +262,7 @@
   </div>
 
   <div class="wrapper">
-    <h3>Des listes</h3>
+    <h3 id='listes'>Des listes</h3>
 
     <ul class="list">
       <li>
@@ -294,6 +292,51 @@
     </ul>
   </div>
 
+  <div class="wrapper">
+
+    <h3>Formulaire d'inscription</h3>
+    <div class='signup'>
+      <form class='signup-form' accept-charset="UTF-8">
+        <h3>Bienvenue chez Woove</h3>
+        <div>
+          <input type="text" , placeholder="prénom" />
+        </div>
+        <div>
+          <input type="text" , placeholder="nom" />
+        </div>
+        <div>
+          <input type="date" , placeholder="date de naissance" />
+        </div>
+        <div>
+          <input type="text" , placeholder="téléphone" />
+        </div>
+        <div>
+          <input type="text" , placeholder="email" />
+        </div>
+        <div>
+          <input type="text" , placeholder="mot de passe" />
+        </div>
+        <div>
+          <input class='btn btn-secondary' type="submit" />
+        </div>
+      </form>
+    </div>
+
+    <h3>Formulaire de connexion</h3>
+    <div class='signin'>
+      <form class='signin-form' accept-charset="UTF-8">
+        <div>
+          <input type="text" , placeholder="email" />
+        </div>
+        <div>
+          <input type="text" , placeholder="mot de passe" />
+        </div>
+        <div>
+          <input class='btn btn-primary' type="submit" />
+        </div>
+      </form>
+    </div>
+  </div>
 
 </body>
 
