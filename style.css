@@ -601,6 +601,12 @@ select{
 
 }
 
+.activity-grid.dark.city{
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
 .list{
   border:1px var(--color-dark) solid;
   width: 30rem;
