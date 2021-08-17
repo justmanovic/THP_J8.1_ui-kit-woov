@@ -149,6 +149,7 @@ h1{
   background-color: var(--color-white);
   box-shadow: 3px 3px 15px rgba(0,0,0,0.25);
   transition: 0.25s all;
+  cursor: pointer;
 }
 
 
@@ -485,11 +486,12 @@ select{
 
 .signup input[type=text] {
   border: 1px var(--color-primary-dark) solid;
-  border-radius: 5px;
+  border-radius: 10px;
   margin:var(--m-xs);
   width: 35rem;
   height: 2rem;
   font-weight: lighter;
+  outline: none;
 }
 
 .signup input[type=date] {
@@ -497,12 +499,13 @@ select{
   background-color: inherit;
   color: grey;
   font: inherit;
-  border-radius: 5px;
+  border-radius: 10px;
   margin:var(--m-xs);
   padding: 3px;
   width: 35rem;
   height: 2rem;
   font-weight: lighter;
+  outline: none;
 }
 
 .signup input[type=submit] {
@@ -536,6 +539,7 @@ select{
   width: 20rem;
   height: 2rem;
   font-weight: lighter;
+  outline: none;
 }
 
 .signin input[type=submit] {
