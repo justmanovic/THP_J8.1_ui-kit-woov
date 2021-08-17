@@ -124,14 +124,24 @@ h1{
 .wrapper{
   display: flex;
   flex-direction: column;
-  margin: 5rem 10rem;
 }
 
-wrapper.grid{
-  /* border: 3px red solid;
+.wrapper.grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  gap: 1rem;
+  padding: 4rem;
+  justify-content: center;
+  align-content: center;
+}
 
+.wrapper.grid>*{
+  transform:scale(0.75);
+  place-self: center;
+}
+
+.wrapper.grid>*:hover{
+  transform:scale(0.8)
 }
 
 .card-section{
