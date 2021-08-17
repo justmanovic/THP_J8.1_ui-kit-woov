@@ -32,6 +32,8 @@
 
   --primary-gradient: linear-gradient(to right, var(--color-primary-light), var(--color-primary));
   --secondary-gradient: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light));
+  --tertiary-gradient: linear-gradient(to right, var(--color-primary-light), var(--color-grey-3));
+
   --danger-gradient: linear-gradient(to right,#ffcccb, var(--color-danger));
 
   --primary-gradient-btn: radial-gradient(var(--color-primary), var(--color-primary-light));
@@ -130,16 +132,27 @@ h1{
   background-image: var(--danger-gradient);
 }
 
-.wrapper-card{
+.wrapper-people-card{
   gap: 2rem;
   margin-bottom: 2rem;
+}
+
+.wrapper-card{
+  gap: 1rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+}
+
+.wrapper-card > *{
+  /* border: 2px red solid; */
 }
 
 .card{
   display: flex;
   flex-direction: column;
-  height: 15rem;
-  width: 15rem;
+  min-height: 15rem;
+  min-width: 13rem;
   /* border: 1px black solid; */
   border-radius: 0.5rem;
   overflow: hidden;
@@ -150,27 +163,106 @@ h1{
   cursor: pointer;
 }
 
+.card-description.event{
+  align-items: flex-start;
+}
+
+.card-bottom{
+  display: flex;
+  justify-content: space-around;
+  align-items:baseline;
+  border: 1px red solid;
+  width: 100%;
+}
+
+.card-bottom span{
+  font-size: 1.2rem;
+}
+
+.dates{
+  border:1px var(--color-grey-3) solid;
+  padding: 0.25rem;
+}
+
+.ranking{
+  margin-right: 0.25rem;
+}
+
+.card.event{
+  width: 25rem;
+  min-height:25rem;
+}
+
+.card.event img{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card.event h5{
+  font-size: 1.2rem;
+}
 
 .card:hover{
   transform: scale(1.025);
 }
 
-
 .card-image{
   height: 70%;
+  position: relative
 }
+
+.fa-heart{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
 
 .card-description{
   background-color: var(--color-white);
   display: flex;
   align-items: center;
-  justify-content: center;
   font-size: 0.85rem;
   height: 30%;
   padding: 0.5rem;
+  flex-direction: column; 
 }
 
+.info-coworking{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
+}
+
+.booking-and-dates{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.card-description.event{
+  padding:1rem;
+  justify-content: space-between;
+}
+
+.card-description.event > div{
+  text-align: left;
+}
+
+.card.event .card-image{
+  height: 60%;
+}
+
+.card-description.event .btn{
+  margin: 0;
+}
 
 .card-image.primary{
   background-color: var(--color-primary);
@@ -558,28 +650,25 @@ select{
   box-shadow: 3px 3px 15px rgba(0,0,0,0.25);
 }
 
-.signup input[type=text] {
-  border: 1px var(--color-primary-dark) solid;
-  border-radius: 10px;
-  margin:var(--m-xs);
+.signup input[type=text],
+.signup input[type=date]{
   width: 35rem;
   height: 2rem;
+  margin:var(--m-xs);
+  padding: 0.5rem;
+  border: 1px var(--color-primary-dark) solid;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: lighter;
+  background-color: white;
   outline: none;
+  color: var(--color-primary-dark);
+  /* position: relative; */
 }
 
-.signup input[type=date] {
-  border: 1px var(--color-primary-dark) solid;
-  background-color: inherit;
+.signup input[type=date]::placeholder {
   color: grey;
-  font: inherit;
-  border-radius: 10px;
-  margin:var(--m-xs);
-  padding: 3px;
-  width: 35rem;
-  height: 2rem;
-  font-weight: lighter;
-  outline: none;
 }
 
 .signup input[type=submit] {
@@ -619,4 +708,38 @@ select{
 .signin input[type=submit] {
   width: 20rem;
   font-size: 1rem;
+}
+
+footer{
+  padding: 4rem 0;
+  background-image:var(--primary-gradient);
+
+}
+
+footer div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: var(--color-white);
+}
+
+footer h4{
+  font-size: 1.2rem;
+}
+
+footer ul{
+  /* border:2px black solid; */
+}
+
+footer li{
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
