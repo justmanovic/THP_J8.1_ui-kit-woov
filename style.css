@@ -147,7 +147,19 @@ h1{
 
 .card-section{
   padding:var(--padding);
+}
+
+.card-section.primary{
   background-image: var(--primary-gradient);
+}
+
+.card-section.danger{
+  background-image: var(--danger-gradient);
+}
+
+.card-section.dark{
+  background-image: var(--secondary-gradient);
+  color: var(--color-grey-1)
 }
 
 .wrapper-people-card{
@@ -658,6 +670,7 @@ select{
 }
 
 .signup {
+  transform:scale(0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -743,6 +756,7 @@ select{
 
 footer{
   padding: 4rem 0;
+  margin-top: 3rem;
   background-image:var(--primary-gradient);
 
 }
