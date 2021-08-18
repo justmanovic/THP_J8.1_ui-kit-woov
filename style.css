@@ -69,7 +69,7 @@ header nav{
   align-items: center;
   padding: var(--padding);
   margin: 0;
-  background-image: var(--primary-gradient)
+  background-image: var(--primary-gradient);
 }
 
 header ul{
@@ -122,6 +122,7 @@ h1{
 }
 
 .wrapper{
+  padding: var(--padding);
   display: flex;
   flex-direction: column;
 }
@@ -146,7 +147,7 @@ h1{
 
 .card-section{
   padding:var(--padding);
-  background-image: var(--danger-gradient);
+  background-image: var(--primary-gradient);
 }
 
 .wrapper-people-card{
