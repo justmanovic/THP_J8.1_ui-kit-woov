@@ -70,6 +70,11 @@ header nav{
   padding: var(--padding);
   margin: 0;
   background-image: var(--primary-gradient);
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 100;
 }
 
 header ul{
