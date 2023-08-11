@@ -57,29 +57,36 @@ body{
   letter-spacing: 0.3px;
   line-height: 1.5;
   font-weight: 400;
+  position: relative;
 
   background-color: var(--color-white);
   /* padding: var(--padding); */
 }
 
-header nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--padding);
-  margin: 0;
-  background-image: var(--primary-gradient);
-  position: fixed;
+header {
+  position: sticky;
   top:0;
   left:0;
   right:0;
   z-index: 100;
 }
+header nav{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem ;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 0;
+  background-image: var(--primary-gradient);
+
+}
 
 header ul{
   display: flex;
   flex-direction: row;
+  gap: 2rem;
+  align-items: center;
 }
 
 header ul a{
@@ -90,9 +97,9 @@ header ul li {
   list-style: none;
 }
 
-header ul li:not(:last-child) {
+/* header ul li:not(:last-child) {
   margin-right: 2rem;
-}
+} */
 
 header ul li a{
   text-decoration: none;
@@ -439,7 +446,7 @@ h1{
 }
 
 .btn:hover{
-  animation: my-anim 4s;
+  /* animation: my-anim 4s; */
 }
 
 .btn:active{
@@ -461,7 +468,7 @@ h1{
 .btn-outline-light{
   background-color: transparent;
   border:3px var(--color-white) solid;
-  color: var(--color-white);
+  color: black;
   }
 
 .btn-outline-dark{
@@ -615,7 +622,7 @@ select{
 
 .activity-grid i:hover {
   /* transform: scale(1.1); */
-  animation:  my-anim 1s;
+  /* animation:  my-anim 1s; */
 
 }
 
